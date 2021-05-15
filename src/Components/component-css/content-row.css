@@ -1,0 +1,32 @@
+
+
+.section-container {
+  width: 100vw;
+  height: 800px;
+  background-color: coral;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  width: 30vw;
+  height: 600px;
+  background-color: darkcyan;
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 500px;
+  min-width: 100%;
+}
+
+.card-1 .card-image {
+  background-image: url('../../Images/painting.jpg');
+}
+
