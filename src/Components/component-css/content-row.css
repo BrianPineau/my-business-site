@@ -47,7 +47,7 @@
   height: 70px;
   width: 100%;
   background-color: rgba(72, 163, 60, 0.75);
-  transition: 150ms ease-out;
+  transition: 180ms ease-out;
 }
 
 .hover-card-1-show {
