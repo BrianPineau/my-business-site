@@ -1,13 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './component-css/header.css';
 
 
 const Header = () => {
+
+  let [scrolled, shrinkHeader] = useState(false);
+
+  const changeHeader = () => {
+    if (window.scrollY >= 6) {
+      shrinkHeader(true);
+    } else {
+      shrinkHeader(false);
+    }
+    
+  }
+
+  window.addEventListener('scroll', changeHeader);
+
   return (
     <div>
-      <header>
-        Thats a lot of nuts!
+      <header className={scrolled === false ? "full-header": "shrink-header full-header-shrink"}>
+        <div className="header-container">
+
+          <div className="top-row">
+            <div className="social-media">media</div>
+            <div className="logo">Groooaaaow!</div>
+            <div className="tools">tools</div>
+          </div>
+
+          <div className="bottom-row">
+            <div className="home">HOME</div>
+            <div className="shop">SHOP</div>
+            <div className="gallery">GALLERY</div>
+            <div className="about">ABOUT</div>
+            <div className="contact">CONTACT</div>
+            <div className="sales">SALES</div>
+          </div>
+
+        </div>
       </header>
+
+      <div className={scrolled === false ? "shrink-header": "shrink-header-show"}>
+        <div className="shrink-header-container">
+
+          <div className="shrink-logo">Groooaaaow!</div>
+        
+          <div className="menu-container">
+            <div className="home">HOME</div>
+            <div className="shop">SHOP</div>
+            <div className="gallery">GALLERY</div>
+            <div className="about">ABOUT</div>
+            <div className="contact">CONTACT</div>
+            <div className="sales">SALES</div>
+          </div>
+        
+          <div className="shrink-tools">tools</div>
+
+        </div>
+      </div>
+
     </div>
   )
 }
