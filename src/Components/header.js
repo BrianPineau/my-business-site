@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { withTheme } from 'styled-components';
+
+
+
 import './component-css/header.css';
 
 
 const Header = () => {
+
+
 
   let [scrolled, shrinkHeader] = useState(false);
 
@@ -12,10 +19,14 @@ const Header = () => {
     } else {
       shrinkHeader(false);
     }
-    
   }
 
   window.addEventListener('scroll', changeHeader);
+
+  const noMoStylin = {
+    color: "white",
+    textDecoration: "none"
+  }
 
   return (
     <div>
@@ -29,9 +40,9 @@ const Header = () => {
           </div>
 
           <div className="bottom-row">
-            <div className="home">HOME</div>
+            <Link style={noMoStylin} to="./"><div className="home">HOME</div></Link>
             <div className="shop">SHOP</div>
-            <div className="gallery">GALLERY</div>
+            <Link style={noMoStylin} to="./image-grid"><div className="gallery">GALLERY</div></Link>
             <div className="about">ABOUT</div>
             <div className="contact">CONTACT</div>
             <div className="sales">SALES</div>
@@ -46,9 +57,9 @@ const Header = () => {
           <div className="shrink-logo">Groooaaaow!</div>
         
           <div className="menu-container">
-            <div className="home">HOME</div>
+            <Link style={noMoStylin} to="./"><div className="home">HOME</div></Link>
             <div className="shop">SHOP</div>
-            <div className="gallery">GALLERY</div>
+            <Link style={noMoStylin} to="./image-grid"><div className="gallery">GALLERY</div></Link>
             <div className="about">ABOUT</div>
             <div className="contact">CONTACT</div>
             <div className="sales">SALES</div>
@@ -58,7 +69,6 @@ const Header = () => {
 
         </div>
       </div>
-
     </div>
   )
 }
