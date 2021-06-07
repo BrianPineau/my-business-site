@@ -1,21 +1,27 @@
 
 
-import Header from './header';
-import ImageCard from './image-card';
+
+// import ImageCard from './image-card';
+import FullImageCard from './full-image-card';
+import './component-css/image-grid.css';
+
 
 const ImageGrid = () => {
   return (
     <div>
-      <Header />
-      sup punk?
-      <ImageCard />
-      <ImageCard />
-      <ImageCard />
-      <ImageCard />
-      <ImageCard />
-      <ImageCard />
-      <ImageCard />
-      <ImageCard />
+      <div className="grid-outer-container">
+        <div className="grid-container">
+          
+          <FullImageCard />
+          <FullImageCard />
+          <FullImageCard />
+          <FullImageCard />
+          <FullImageCard />
+          <FullImageCard />
+          <FullImageCard />
+
+        </div>
+      </div>
     </div>
   )
 }

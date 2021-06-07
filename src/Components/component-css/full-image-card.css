@@ -1,0 +1,19 @@
+
+
+.full-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  background-image: url('../../Images/goku-jet.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.full-image-container:after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}

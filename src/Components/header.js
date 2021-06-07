@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { withTheme } from 'styled-components';
 
 
 
@@ -30,6 +29,8 @@ const Header = () => {
 
   return (
     <div>
+      <div className="gap-filler"></div>
+      
       <header className={scrolled === false ? "full-header": "shrink-header full-header-shrink"}>
         <div className="header-container">
 
@@ -42,7 +43,7 @@ const Header = () => {
           <div className="bottom-row">
             <Link style={noMoStylin} to="./"><div className="home">HOME</div></Link>
             <div className="shop">SHOP</div>
-            <Link style={noMoStylin} to="./image-grid"><div className="gallery">GALLERY</div></Link>
+            <Link style={noMoStylin} to="./gallery"><div className="gallery">GALLERY</div></Link>
             <div className="about">ABOUT</div>
             <div className="contact">CONTACT</div>
             <div className="sales">SALES</div>
@@ -59,7 +60,7 @@ const Header = () => {
           <div className="menu-container">
             <Link style={noMoStylin} to="./"><div className="home">HOME</div></Link>
             <div className="shop">SHOP</div>
-            <Link style={noMoStylin} to="./image-grid"><div className="gallery">GALLERY</div></Link>
+            <Link style={noMoStylin} to="./gallery"><div className="gallery">GALLERY</div></Link>
             <div className="about">ABOUT</div>
             <div className="contact">CONTACT</div>
             <div className="sales">SALES</div>

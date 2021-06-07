@@ -5,9 +5,9 @@
 }
 
 .jumbo-container {
-  
   height: 100vh;
   width: 100vw;
+  margin-top: 140px;
   background-image: url('../../Images/JUMBO.jpg');
   background-size: cover;
   background-position: center;
