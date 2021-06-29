@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/header';
 import ImageGrid from './Components/image-grid';
 import LandingPage from './Components/landing-page';
+import Footer from './Components/footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" exact component={LandingPage} />
           <Route path="/gallery" component={ImageGrid} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
