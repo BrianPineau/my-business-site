@@ -1,5 +1,4 @@
-
-
+import { Link } from 'react-router-dom';
 
 // import ImageCard from './image-card';
 import FullImageCard from './full-image-card';
@@ -12,7 +11,10 @@ const ImageGrid = () => {
       <div className="grid-outer-container">
         <div className="grid-container">
           
-          <FullImageCard />
+          <Link to="/gallery-image-info">
+            <FullImageCard />
+          </Link>
+          
           <FullImageCard />
           <FullImageCard />
           <FullImageCard />
