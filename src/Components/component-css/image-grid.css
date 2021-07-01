@@ -6,7 +6,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 1px;
   margin: 280px auto 0;
   max-width: 1350px;
 }
