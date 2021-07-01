@@ -3,9 +3,19 @@
   height: 100vh;
   margin-top: 250px;
   background-color: tomato;
+}
+
+.image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  width: 75%;
+  height: 80%;
+  background-color: lawngreen;
 }
 
+.big-image {
+  width: 80%;
+  height: 80%;
+  background-color: lightblue;
+}
