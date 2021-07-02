@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import './component-css/header.css';
+import './component-css/mini-header.css';
 
 
-const Header = () => {
+const MiniHeader = () => {
 
   let [scrolled, shrinkHeader] = useState(false);
 
@@ -56,4 +56,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default MiniHeader;
