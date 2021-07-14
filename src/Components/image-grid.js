@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import SmallHeader from './small-header';
 // import ImageCard from './image-card';
 import FullImageCard from './full-image-card';
 import './component-css/image-grid.css';
@@ -8,6 +9,7 @@ import './component-css/image-grid.css';
 const ImageGrid = () => {
   return (
     <div>
+      <SmallHeader />
       <div className="grid-outer-container">
         <div className="grid-container">
           

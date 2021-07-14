@@ -51,7 +51,7 @@
   position: absolute;
   left: -70px;
   opacity: 0;
-  transition: 0.17s ease-out;
+  transition: 0.17s ease-in-out;
 }
 
 .social-media-triggered {
@@ -90,7 +90,7 @@
   position: absolute;
   right: -70px;
   opacity: 0;
-  transition: 0.18s ease-out;
+  transition: 0.18s ease-in-out;
 }
 
 .tools-triggered {

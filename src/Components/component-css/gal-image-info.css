@@ -1,4 +1,5 @@
 .image-info-container {
+  display: flex;
   width: 100vw;
   height: 100vh;
   margin-top: 250px;
@@ -18,4 +19,44 @@
   width: 80%;
   height: 80%;
   background-color: lightblue;
+}
+
+/* Side bar content */
+.side-bar-container {
+  width: 25%;
+  height: 90vh;
+  background-color: lightskyblue;
+}
+
+/*  Similar Images Sidebar Grid  */
+.similar-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px;
+  max-width: 1350px;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 10000;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.similar-images-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (max-width: 775px) {
+  .side-bar-container {
+    display: none;
+  }
+
+  .image-container {
+    width: 100%;
+  }
 }

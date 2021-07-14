@@ -1,0 +1,57 @@
+.small-header {
+  background-color: black;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.small-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 0 30px;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5em;
+}
+
+.small-media {
+  position: absolute;
+  left: 0;
+}
+
+.shop, .gallery, .about, .contact, .sales {
+  margin-left: 30px;
+  transition: 0.15s;
+}
+
+.home:hover {
+  color: #FD0100;
+  transition: .15s;
+}
+.shop:hover {
+  color: #F76915;
+}
+.gallery:hover {
+  color:#EEDE04;
+}
+.about:hover {
+  color:#A0D636;
+}
+.contact:hover {
+  color:#2FA236;
+}
+.sales:hover {
+  color:#333ED4;
+}
+
+.tools-triggered {
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  transition: 0.18s ease-out 0.4s;
+}
