@@ -8,7 +8,7 @@ const ImageCard = (props) => {
   
   console.log(animateCard);
 
-  return (
+  return ( 
     <div>
       <section className="card card-1">
         <div

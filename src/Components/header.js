@@ -31,7 +31,7 @@ const Header = () => {
 
           <div className="top-row">
             <div className="social-media">media</div>
-            <div className="logo">Groooaaaow!</div>
+            <div className="logo"><div className="logo-image"></div></div>
             <div className="tools">tools</div>
           </div>
 

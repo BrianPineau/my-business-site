@@ -37,7 +37,19 @@
   margin: 0 30px;
 }
 
+.logo {
+  height: 100%;
+  width: 400px;
+}
 
+.logo-image {
+  background-image: url("../../Images/AstoriaLogo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  max-width: 100%;
+}
 
 .bottom-row {
   position: relative;

@@ -1,13 +1,15 @@
 
 .grid-outer-container {
-  margin: 0 10px;
+  padding: 0 10px;
+  background-color: rgb(29, 29, 29);
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1px;
-  margin: 200px auto 0;
+  margin: 0 auto 0;
+  padding-top: 100px;
   max-width: 1350px;
 }
 

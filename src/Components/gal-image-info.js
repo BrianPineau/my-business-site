@@ -7,14 +7,14 @@ import './component-css/gal-image-info.css';
 
 const GalleryImageInfo = () => {
 
-
+ 
   return (
     <div>
       <SmallHeader />
       <div className="image-info-container">
 
         <div className="image-container">
-          <div className="big-image"></div>
+          <div href="" className="big-image"></div>
         </div>
 
         <div className="side-bar-container">
