@@ -29,6 +29,30 @@
   cursor: pointer;
 }
 
+.full-screen-img-off {
+  display: none;
+}
+
+.full-screen-img-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  background-color: rgba(138, 43, 226, 0.95);
+  z-index: 100;
+}
+
+.full-screen-image {
+  width: 95%;
+  height: 95%;
+  background-color: crimson;
+}
+
 /* Side bar content */
 .side-bar-container {
   width: 25%;
@@ -37,6 +61,11 @@
 }
 
 /*  Similar Images Sidebar Grid  */
+.similar-images {
+  overflow: hidden;
+  height: 100%;
+}
+
 .similar-images-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
