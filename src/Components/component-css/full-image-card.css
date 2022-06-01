@@ -2,10 +2,9 @@
 
 .full-image-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-  background-color: brown;
-  background-image: url('../../Images/goku-jet.jpg');
+  background-color: black;
   background-size: cover;
   background-position: center;
   max-width: 450px;
@@ -16,4 +15,26 @@
   content: '';
   display: block;
   padding-top: 100%;
+}
+
+.f-img-cont-1 {
+  background-image: url('../../Images/AstoriaLogo.png');
+}
+.f-img-cont-2 {
+  background-image: url('../../Images/goku-jet.jpg');
+}
+.f-img-cont-3 {
+  background-image: url('../../Images/block.jpg');
+}
+.f-img-cont-4 {
+  background-image: url('../../Images/green.jpg');
+}
+.f-img-cont-5 {
+  background-image: url('../../Images/xgirl.jpg');
+}
+.f-img-cont-6 {
+  background-image: url('../../Images/pose.jpg');
+}
+.f-img-cont-7 {
+  background-image: url('../../Images/on-rocks.jpg');
 }

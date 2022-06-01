@@ -5,9 +5,9 @@ import './component-css/content-row.css';
 const ContentRow = () => {
 
   
-  return (
+  return ( 
     <div>
-      <div className="section-container">
+      <div className="section-container"> 
         <div className="flex-container">
           <ImageCard
             image = {"card card-image card-image-1"}

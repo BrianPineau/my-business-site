@@ -2,14 +2,14 @@
 
 import './component-css/full-image-card.css';
 
-const FullImageCard = () => {
+const FullImageCard = (props) => {
   return (
     <div>
-      <div className="full-image-container">
+      <div className={props.fimage}>
         <div className="full-image-card"></div>
       </div>
     </div>
   )
 }
 
-export default FullImageCard;
+export default FullImageCard; 

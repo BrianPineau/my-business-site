@@ -9,7 +9,7 @@ const ImageCard = (props) => {
   console.log(animateCard);
 
   return ( 
-    <div>
+    <div className="image-card-wrapper"> 
       <section className="card card-1">
         <div
           onMouseEnter = {() => animateCard(true)}

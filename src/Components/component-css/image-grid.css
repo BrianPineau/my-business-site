@@ -1,5 +1,5 @@
 
-.grid-outer-container {
+.grid-outer-container { 
   padding: 0 10px;
   background-color: rgb(29, 29, 29);
 }
@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1px;
   margin: 0 auto 0;
-  padding-top: 100px;
+  padding: 100px 0 50px;
   max-width: 1350px;
 }
 

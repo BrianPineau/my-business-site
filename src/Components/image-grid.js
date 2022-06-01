@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
 import SmallHeader from './small-header';
 // import ImageCard from './image-card';
@@ -14,15 +14,34 @@ const ImageGrid = () => {
         <div className="grid-container">
           
           <Link to="/gallery-image-info">
-            <FullImageCard />
+            <FullImageCard
+              fimage = {"full-image-container f-img-cont-1"}
+            />
           </Link>
           
-          <FullImageCard />
-          <FullImageCard />
-          <FullImageCard />
-          <FullImageCard />
-          <FullImageCard />
-          <FullImageCard />
+          <FullImageCard
+            fimage = {"full-image-container f-img-cont-2"}
+          />
+
+          <FullImageCard
+            fimage = {"full-image-container f-img-cont-3"}
+          />
+
+          <FullImageCard
+            fimage = {"full-image-container f-img-cont-4"}
+          />
+
+          <FullImageCard
+            fimage = {"full-image-container f-img-cont-5"}
+          />
+
+          <FullImageCard
+            fimage = {"full-image-container f-img-cont-6"}
+          />
+
+          <FullImageCard
+            fimage = {"full-image-container f-img-cont-7"}
+          />
 
         </div>
       </div>
