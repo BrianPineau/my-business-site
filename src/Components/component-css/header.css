@@ -1,4 +1,4 @@
-.full-header {
+/* .full-header {
   background-color: black;
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -8,7 +8,7 @@
   align-items: center;
   z-index: 10;
   transition: 0.1s ease-out;
-}
+} */
 
 .full-header-shrink {
   background-color: black;
@@ -22,25 +22,25 @@
   transition: 0.18s ease-out 0.1s;
 }
 
-.header-container {
+/* .header-container {
   display: flex;
   flex-direction: column;
   margin: 10px 30px;
   width: 100%;
-}
+} */
 
-.top-row {
+/* .top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 220px;
   margin: 0 30px;
-}
+} */
 
-.logo {
+/* .logo {
   height: 100%;
   width: 400px;
-}
+} */
 
 .logo-image {
   background-image: url("../../Images/AstoriaLogo.png");
@@ -51,13 +51,13 @@
   max-width: 100%;
 }
 
-.bottom-row {
+/* .bottom-row {
   position: relative;
   display: flex;
   justify-content: center;
   font-family: 'Teko', sans-serif;
   font-size: 1.5em;
-}
+} */
 
 .social-media-pretrigger {
   position: absolute;
@@ -110,4 +110,57 @@
   right: 0;
   opacity: 1;
   transition: 0.18s ease-out 0.4s;
+}
+
+/* Vertical Header */
+
+.vert-header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  transition: 0.1s ease-out;
+}
+
+.vheader-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.vtop-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.vlogo {
+  height: 320px;
+  width: 400px;
+  margin-left: -8px;
+}
+
+.vert-bottom-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5em;
+}
+
+.vhome,
+.vshop,
+.vgallery,
+.vabout,
+.vcontact,
+.vsales {
+margin: 10px 20%;
 }
