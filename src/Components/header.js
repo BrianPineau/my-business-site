@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Fragment } from 'react';
 
 import './component-css/header.css';
 
 
 const Header = () => {
+
+  const [loadStatus, setLoadStatus] = useState(false);
+  const [headWidth, setHeadWidth] = useState(0);
+
+window.addEventListener('load', () => {
+  // alert("AWWW, SHEEEIIIIIII!!!")
+  setLoadStatus(true);
+  setHeadWidth(300);
+});
+
+
 
   let [scrolled, shrinkHeader] = useState(false);
 
@@ -25,8 +37,13 @@ const Header = () => {
   }
 
   return (
-    <div>
-      <header className="vert-header">
+    <Fragment>
+
+
+      <header 
+      className={loadStatus ? ("shrunk-vert-header") : ("vert-header")}>
+
+        
         <div className="header-container vheader-container">
 
           <div className="top-row vtop-row">
@@ -40,11 +57,11 @@ const Header = () => {
             {/* <div className={scrolled === false ? "social-media-pretrigger": "social-media-triggered"}>media</div>  */}
 
             <Link style={noMoStylin} to="./"><div className="home vhome">HOME</div></Link>
-            <Link><div className="shop vshop">SHOP</div></Link>
+            <Link style={noMoStylin}><div className="shop vshop">STORE</div></Link>
             <Link style={noMoStylin} to="./gallery"><div className="gallery vgallery">GALLERY</div></Link>
-            <Link><div className="about vabout">ABOUT</div></Link>
-            <Link><div className="contact vcontact">CONTACT</div></Link>
-            <Link><div className="sales vsales">SALES</div></Link>
+            <Link style={noMoStylin}><div className="about vabout">ABOUT</div></Link>
+            <Link style={noMoStylin}><div className="contact vcontact">CONTACT</div></Link>
+            <Link style={noMoStylin}><div className="sales vsales">SALES</div></Link>
 
             {/* <div className={scrolled === false ? "tools-pretrigger": "tools-triggered"}>tools</div> */}
 
@@ -53,7 +70,7 @@ const Header = () => {
           <div className="social-media">media</div>
         </div>
       </header>
-    </div>
+    </Fragment>
 
 
     

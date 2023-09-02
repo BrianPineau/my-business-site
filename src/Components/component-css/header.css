@@ -114,15 +114,28 @@
 
 /* Vertical Header */
 
-.vert-header {
+.shrunk-vert-header {
   display: flex;
   flex-direction: column;
-
   background-color: black;
   position: fixed;
   top: 0; left: 0;
   height: 100vh;
   width: 300px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  transition: 1s ease-out;
+}
+
+.vert-header {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 0px;
   display: flex;
   align-items: center;
   z-index: 10;
@@ -133,6 +146,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
 }
 
 .vtop-row {
@@ -163,4 +177,12 @@
 .vcontact,
 .vsales {
 margin: 10px 20%;
+}
+
+.social-media {
+  flex-direction: column;
+  margin: auto auto 50px auto;
+  width:300px;
+  text-align: center;
+  color: red;
 }

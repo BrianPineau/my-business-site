@@ -32,7 +32,7 @@ const GalleryImageInfo = () => {
 
         <div className="side-bar-container">  
           <div className="similar-images">
-            <div className="similar-images-grid">
+            <div className="similar-images-grid"> 
               <FullImageCard />
               <FullImageCard />
               <FullImageCard />
