@@ -7,11 +7,17 @@ import LandingPage from './Components/landing-page';
 import GalleryImageInfo from './Components/gal-image-info.js';
 import Footer from './Components/footer';
 
+const blackBackground = {
+  backgroundColor: 'black'
+};
+
 function App() {
   return (
+    
+    
 
     <Router>
-      <div className="App">
+      <div className="App" style={blackBackground}>
         <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/gallery" component={ImageGrid} />

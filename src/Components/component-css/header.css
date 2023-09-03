@@ -114,6 +114,23 @@
 
 /* Vertical Header */
 
+.shrunk-bg-header {
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgb(71 1 160);
+  transition: 0.4s cubic-bezier(0, 0, 0, 1.06);
+} 
+
+.bg-header {
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 0px;
+  background-color: rgb(71 1 160);
+}
+
 .shrunk-vert-header {
   display: flex;
   flex-direction: column;
@@ -121,11 +138,12 @@
   position: fixed;
   top: 0; left: 0;
   height: 100vh;
-  width: 300px;
+  width: 249px;
   display: flex;
   align-items: center;
   z-index: 10;
-  transition: 1s ease-out;
+  transition: 1s cubic-bezier(0, 0, 0, 1.06);
+  transition-delay: 0.15s;
 }
 
 .vert-header {
@@ -139,7 +157,6 @@
   display: flex;
   align-items: center;
   z-index: 10;
-  transition: 0.1s ease-out;
 }
 
 .vheader-container {
@@ -177,6 +194,12 @@
 .vcontact,
 .vsales {
 margin: 10px 20%;
+}
+
+.flat-line {
+  height: 0.1px;
+  width: 100%;
+  background-color: white;
 }
 
 .social-media {

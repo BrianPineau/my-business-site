@@ -13,7 +13,7 @@ const Header = () => {
 window.addEventListener('load', () => {
   // alert("AWWW, SHEEEIIIIIII!!!")
   setLoadStatus(true);
-  setHeadWidth(300);
+  // setHeadWidth(300);
 });
 
 
@@ -39,11 +39,8 @@ window.addEventListener('load', () => {
   return (
     <Fragment>
 
-
-      <header 
-      className={loadStatus ? ("shrunk-vert-header") : ("vert-header")}>
-
-        
+    <div className={loadStatus ? ("shrunk-bg-header") : ("bg-header")}>Bloop</div>
+      <header className={loadStatus ? ("shrunk-vert-header") : ("vert-header")}>
         <div className="header-container vheader-container">
 
           <div className="top-row vtop-row">
@@ -56,7 +53,9 @@ window.addEventListener('load', () => {
 
             {/* <div className={scrolled === false ? "social-media-pretrigger": "social-media-triggered"}>media</div>  */}
 
-            <Link style={noMoStylin} to="./"><div className="home vhome">HOME</div></Link>
+            <Link style={noMoStylin} to="./"><div className="home vhome">HOME
+              <div className="flat-line"></div>
+            </div></Link>
             <Link style={noMoStylin}><div className="shop vshop">STORE</div></Link>
             <Link style={noMoStylin} to="./gallery"><div className="gallery vgallery">GALLERY</div></Link>
             <Link style={noMoStylin}><div className="about vabout">ABOUT</div></Link>
