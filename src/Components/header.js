@@ -2,6 +2,7 @@ import React, { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
 
+import SideHeaderLi from './side-header-li.js';
 import './component-css/header.css';
 
 
@@ -56,7 +57,10 @@ window.addEventListener('load', () => {
             <Link style={noMoStylin} to="./"><div className="home vhome">HOME
               <div className="flat-line"></div>
             </div></Link>
-            <Link style={noMoStylin}><div className="shop vshop">STORE</div></Link>
+
+            <Link style={noMoStylin}><SideHeaderLi /></Link>
+            
+            {/* <Link style={noMoStylin}><div className="shop vshop">STORE</div></Link> */}
             <Link style={noMoStylin} to="./gallery"><div className="gallery vgallery">GALLERY</div></Link>
             <Link style={noMoStylin}><div className="about vabout">ABOUT</div></Link>
             <Link style={noMoStylin}><div className="contact vcontact">CONTACT</div></Link>

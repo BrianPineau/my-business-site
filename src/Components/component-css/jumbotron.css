@@ -7,9 +7,9 @@
 .jumbo-container {
   height: 100vh;
   width: auto;
-  margin-left: 300px;
+  margin-left: 250px;
   background-image: url('../../Images/aras.jpg');
-  background-size: cover;
+  background-size:auto;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
