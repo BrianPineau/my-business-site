@@ -1,7 +1,8 @@
-.store, .gallery, .about, .contact, .sales {
+/* .store, .gallery, .about, .contact, .sales {
     margin-left: 30px;
     transition: 0.15s;
   }
+
   
   .home:hover {
     color: #FD0100;
@@ -22,12 +23,21 @@
   .sales:hover {
     color:#333ED4;
   }
-
+  
   .vhome,
   .vstore,
   .vgallery,
   .vabout,
   .vcontact,
   .vsales {
-    margin: 10px 20%;
-}
+    margin: -10px 20%;
+    opacity: 0;
+  }
+ 
+  
+  .vstore-loaded {
+    margin-left: 20px;
+    margin: 10px 20%; 
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }  */

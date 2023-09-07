@@ -1,4 +1,4 @@
-import React, { useEffect , useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
 
@@ -9,10 +9,19 @@ import './component-css/header.css';
 const Header = () => {
 
   const [loadStatus, setLoadStatus] = useState(false);
-  const [headWidth, setHeadWidth] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);  
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
 
 window.addEventListener('load', () => {
-  // alert("AWWW, SHEEEIIIIIII!!!")
   setLoadStatus(true);
   // setHeadWidth(300);
 });
@@ -27,7 +36,7 @@ window.addEventListener('load', () => {
     } else {
       shrinkHeader(false);
     }
-  }
+  };
 
   window.addEventListener('scroll', changeHeader);
 
@@ -35,9 +44,9 @@ window.addEventListener('load', () => {
   const noMoStylin = {
     color: "white",
     textDecoration: "none"
-  }
+  };
 
-  return (
+  return (   
     <Fragment>
 
     <div className={loadStatus ? ("shrunk-bg-header") : ("bg-header")}>Bloop</div>
@@ -54,19 +63,37 @@ window.addEventListener('load', () => {
 
             {/* <div className={scrolled === false ? "social-media-pretrigger": "social-media-triggered"}>media</div>  */}
 
-            <Link style={noMoStylin} to="./"><div className="home vhome">HOME
-              <div className="flat-line"></div>
-            </div></Link>
+            {/* <Link style={noMoStylin} to="./"><div className="home vhome">HOME</div></Link> */}
 
-            <Link style={noMoStylin}><SideHeaderLi /></Link>
+            <Link style={noMoStylin} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+              <SideHeaderLi liName={'HOME'} className={loadStatus ? "vhome-loaded" : "vhome"} />
+            </Link>
+
+              <div className={isHovered ? "flat-line" : "flat-line-hovered"}></div>
+            <Link style={noMoStylin}>
+              <SideHeaderLi liName={'STORE'} className={loadStatus ? "vstore-loaded" : "vstore"} />
+            </Link>
+
+            <Link style={noMoStylin}>
+              <SideHeaderLi liName={'GALLERY'} className={loadStatus ? "vgallery-loaded" : "vgallery"} />
+            </Link>
+
+            <Link style={noMoStylin}>
+              <SideHeaderLi liName={'ABOUT'} className={loadStatus ? "vabout-loaded" : "vabout"} />
+            </Link>
+
+            <Link style={noMoStylin}>
+              <SideHeaderLi liName={'CONTACT'} className={loadStatus ? "vcontact-loaded" : "vcontact"} />
+            </Link>
+            <Link style={noMoStylin}><SideHeaderLi liName={'SALES'} className={loadStatus ? "vsales-loaded" : "vsales"} /></Link>
             
-            {/* <Link style={noMoStylin}><div className="shop vshop">STORE</div></Link> */}
-            <Link style={noMoStylin} to="./gallery"><div className="gallery vgallery">GALLERY</div></Link>
+             {/* <Link style={noMoStylin}><div className="shop vshop">STORE</div></Link> 
+             <Link style={noMoStylin} to="./gallery"><div className="gallery vgallery">GALLERY</div></Link>
             <Link style={noMoStylin}><div className="about vabout">ABOUT</div></Link>
-            <Link style={noMoStylin}><div className="contact vcontact">CONTACT</div></Link>
-            <Link style={noMoStylin}><div className="sales vsales">SALES</div></Link>
+            <Link style={noMoStylin}><div className="contact vcontact">CONTACT</div></Link> 
+             <Link style={noMoStylin}><div className="sales vsales">SALES</div></Link>  */}
 
-            {/* <div className={scrolled === false ? "tools-pretrigger": "tools-triggered"}>tools</div> */}
+             <div className={scrolled === false ? "tools-pretrigger": "tools-triggered"}>tools</div> 
 
           </div>
 

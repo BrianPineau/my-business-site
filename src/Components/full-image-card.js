@@ -2,7 +2,7 @@
 
 import './component-css/full-image-card.css';
 
-const FullImageCard = (props) => {
+const FullImageCard = (props) => { 
   return (
     <div>
       <div className={props.fimage}>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './component-css/image-card.css';
 
-const ImageCard = (props) => {
+const ImageCard = (props) => { 
 
   let [className, animateCard] = useState(false);
   
