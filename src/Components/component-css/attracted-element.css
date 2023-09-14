@@ -1,0 +1,18 @@
+.email-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 150px;
+    left: 75%;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: 5px solid white;
+    border-radius: 50px;
+  }

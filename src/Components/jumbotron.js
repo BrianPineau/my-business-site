@@ -1,4 +1,7 @@
+
+import AttractedElement from './attracted-element';
 import './component-css/jumbotron.css';
+
 
 
 const Jumbo = () => {
@@ -8,6 +11,8 @@ const Jumbo = () => {
     <div>
       <div className="jumbo-container">
       </div>
+
+      <AttractedElement className='email-signup'>EMAIL SIGNUP</AttractedElement>
     </div>
   )
 

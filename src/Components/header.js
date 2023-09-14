@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
 
@@ -20,11 +20,22 @@ const Header = () => {
     setIsHovered(false);
   };
 
+  
 
-window.addEventListener('load', () => {
-  setLoadStatus(true);
-  // setHeadWidth(300);
-});
+
+
+  useEffect (() => {
+    const handleLoadPage = () => {
+      setLoadStatus(true);
+    };
+
+
+    window.addEventListener('load', handleLoadPage);
+
+    return () => {
+      window.removeEventListener('load', handleLoadPage)
+    }
+  }, []);
 
 
 
@@ -39,6 +50,29 @@ window.addEventListener('load', () => {
   };
 
   window.addEventListener('scroll', changeHeader);
+
+  const [scrollClass, setScrollClass] = useState('top'); // Initial class
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check the scroll position (Y-axis)
+      if (window.scrollY > 0) {
+        // When scrolled past Y = 0
+        setScrollClass('scrolled');
+      } else {
+        // When at the top of the page (Y = 0)
+        setScrollClass('top');
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
 
   const noMoStylin = {
@@ -69,10 +103,13 @@ window.addEventListener('load', () => {
               <SideHeaderLi liName={'HOME'} className={loadStatus ? "vhome-loaded" : "vhome"} />
             </Link>
 
-              <div className={isHovered ? "flat-line" : "flat-line-hovered"}></div>
+              <div className={isHovered ? "flat-line flat-line-1" : "flat-line-hovered"}></div>
+
             <Link style={noMoStylin}>
               <SideHeaderLi liName={'STORE'} className={loadStatus ? "vstore-loaded" : "vstore"} />
             </Link>
+
+            <div className={isHovered ? "flat-line flat-line-2" : "flat-line-hovered"}></div>
 
             <Link style={noMoStylin}>
               <SideHeaderLi liName={'GALLERY'} className={loadStatus ? "vgallery-loaded" : "vgallery"} />
