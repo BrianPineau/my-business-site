@@ -13,18 +13,18 @@ const ImageGrid = () => {
       <div className="grid-outer-container">
         <div className="grid-container">
           
-          <Link to="/gallery-image-info">
-            <FullImageCard
-              fimage = {"full-image-container f-img-cont-1"}
-            />
-          </Link>
+          <FullImageCard 
+          navLink={"/gallery-image-info"} 
+          fimage = "full-image-container f-img-cont-1"
+          imgLink="../Images/AstoriaLogo.png"
+          />
           
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-2"}
+            fimage = {"full-image-container tall f-img-cont-2"}
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-3"}
+            fimage = {"full-image-container fat f-img-cont-3"}
           />
 
           <FullImageCard
@@ -32,7 +32,7 @@ const ImageGrid = () => {
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-5"}
+            fimage = {"full-image-container tall f-img-cont-5"}
           />
 
           <FullImageCard

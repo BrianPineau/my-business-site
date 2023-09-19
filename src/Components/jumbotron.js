@@ -12,7 +12,7 @@ const Jumbo = () => {
       <div className="jumbo-container">
       </div>
 
-      <AttractedElement className='email-signup'>EMAIL SIGNUP</AttractedElement>
+      <AttractedElement className='email-signup'></AttractedElement>
     </div>
   )
 

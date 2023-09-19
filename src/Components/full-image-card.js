@@ -1,14 +1,13 @@
-
-
+import { Link } from 'react-router-dom';
 import './component-css/full-image-card.css';
 
 const FullImageCard = (props) => { 
   return (
-    <div>
-      <div className={props.fimage}>
-        <div className="full-image-card"></div>
-      </div>
-    </div>
+    <>
+      <Link to={props.navLink} className={props.fimage}>
+        <image src={props.imgLink} alt="Image" />
+      </Link>
+    </>
   )
 }
 
