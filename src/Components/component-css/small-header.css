@@ -21,7 +21,24 @@
 
 .small-media {
   position: absolute;
+  top: -4px;
   left: 0;
+  height: 50px;
+}
+
+.small-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(64, 64, 64);
+}
+.small-media-container > img {
+  height: 30px;
+  width: 30px;
+  color: white;
 }
 
 .shop, .gallery, .about, .contact, .sales {

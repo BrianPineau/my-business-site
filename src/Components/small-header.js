@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import './component-css/small-header.css';
+import xLogo from '../Images/x-logo.png';
 
 const SmallHeader = () => {
 
@@ -22,7 +23,11 @@ const SmallHeader = () => {
 
           <div className="small-wrapper">
 
-            <div className="small-media">media</div> 
+            <Link to="twitter.com/10poundhound" target="_blank" className="small-media">
+              <div className='small-media-container'>
+                <img src={xLogo}/>
+              </div>
+            </Link> 
 
             <Link style={noMoStylin} to="./"><div className="home">HOME</div></Link>
             <div className="shop">SHOP</div>
