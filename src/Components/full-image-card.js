@@ -5,7 +5,6 @@ const FullImageCard = (props) => {
   return (
     <>
       <Link to={props.navLink} className={props.fimage}>
-        <image src={props.imgLink} alt="Image" />
       </Link>
     </>
   )

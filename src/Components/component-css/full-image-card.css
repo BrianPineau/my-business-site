@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  background-color: black;
+  background-color: blue;
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -20,18 +20,10 @@
   padding-top: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  background-size: cover;
-  display: inline-block;
-}
-
-/* .f-img-cont-1 {
+.f-img-cont-1 {
   background-image: url('../../Images/AstoriaLogo.png');
   background-color: rgb(230, 236, 118);
-} */
+}
 .f-img-cont-2 {
   background-image: url('../../Images/goku-jet.jpg');
 }
@@ -49,4 +41,22 @@ img {
 }
 .f-img-cont-7 {
   background-image: url('../../Images/on-rocks.jpg');
+}
+.f-img-cont-8 {
+  background-image: url('../../Images/image1.jpg');
+}
+.f-img-cont-9 {
+  background-image: url('../../Images/image2.jpg');
+}
+.f-img-cont-10 {
+  background-image: url('../../Images/image3.jpg');
+}
+.f-img-cont-11 {
+  background-image: url('../../Images/image4.jpg');
+}
+.f-img-cont-12 {
+  background-image: url('../../Images/image5.jpg');
+}
+.f-img-cont-13 {
+  background-image: url('../../Images/image6.jpg');
 }
