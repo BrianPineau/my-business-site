@@ -29,9 +29,18 @@ const SmallHeader = () => {
               </div>
             </Link> 
 
-            <Link style={noMoStylin} to="./"><div className="home">HOME</div></Link>
-            <div className="shop">SHOP</div>
-            <Link style={noMoStylin} to="./gallery"><div className="gallery">GALLERY</div></Link>
+            <Link style={noMoStylin} to="./">
+              <div className="home">HOME</div>
+            </Link>
+
+            <Link style={noMoStylin} to="./shop-page">
+              <div className="shop">SHOP</div>
+            </Link>
+
+            <Link style={noMoStylin} to="./gallery">
+              <div className="gallery">GALLERY</div>
+            </Link>
+            
             <div className="about">ABOUT</div>
             <div className="contact">CONTACT</div>
             <div className="sales">SALES</div>
