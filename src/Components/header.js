@@ -105,13 +105,13 @@ const Header = () => {
 
               <div className={isHovered ? "flat-line flat-line-1" : "flat-line-hovered"}></div>
 
-            <Link style={noMoStylin}>
+            <Link to="./shop-page" style={noMoStylin}>
               <SideHeaderLi liName={'STORE'} className={loadStatus ? "vstore-loaded" : "vstore"} />
             </Link>
 
             <div className={isHovered ? "flat-line flat-line-2" : "flat-line-hovered"}></div>
 
-            <Link style={noMoStylin}>
+            <Link to="./gallery" style={noMoStylin}>
               <SideHeaderLi liName={'GALLERY'} className={loadStatus ? "vgallery-loaded" : "vgallery"} />
             </Link>
 
@@ -123,12 +123,6 @@ const Header = () => {
               <SideHeaderLi liName={'CONTACT'} className={loadStatus ? "vcontact-loaded" : "vcontact"} />
             </Link>
             <Link style={noMoStylin}><SideHeaderLi liName={'SALES'} className={loadStatus ? "vsales-loaded" : "vsales"} /></Link>
-            
-             {/* <Link style={noMoStylin}><div className="shop vshop">STORE</div></Link> 
-             <Link style={noMoStylin} to="./gallery"><div className="gallery vgallery">GALLERY</div></Link>
-            <Link style={noMoStylin}><div className="about vabout">ABOUT</div></Link>
-            <Link style={noMoStylin}><div className="contact vcontact">CONTACT</div></Link> 
-             <Link style={noMoStylin}><div className="sales vsales">SALES</div></Link>  */}
 
              <div className={scrolled === false ? "tools-pretrigger": "tools-triggered"}>tools</div> 
 
