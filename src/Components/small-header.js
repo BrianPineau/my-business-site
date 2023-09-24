@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './component-css/small-header.css';
 import xLogo from '../Images/x-logo.png';
 
-const SmallHeader = () => {
+const SmallHeader = (props) => {
 
 
   const noMoStylin = {
@@ -13,7 +13,7 @@ const SmallHeader = () => {
 
   return (
     <div>
-      <header className="small-header">
+      <header className={props.smallHeaderClass/*"small-header"*/}>
 
           {/* <div className="top-row">
             <div className="social-media">media</div>

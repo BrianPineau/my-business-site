@@ -12,7 +12,9 @@ const ImageGrid = () => {
 
   return (
     <div>
-      <SmallHeader />
+      <SmallHeader 
+        smallHeaderClass = {'small-header'}
+      />
       <div className="grid-outer-container">
         <div className="grid-container">
           

@@ -13,7 +13,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 100) {
         setSmallHeader(true);
       } else {
         setSmallHeader(false);
@@ -29,7 +29,12 @@ const LandingPage = () => {
 
   return (
     <div>
-      {isSmallHeader ? <SmallHeader /> : <Header />}
+      {/* {isSmallHeader ? <SmallHeader /> : <Header />} */}
+      <Header  />
+      <SmallHeader 
+      smallHeaderClass = {isSmallHeader ? 'small-header' : 'small-header-pretrigger'}
+        
+      />
       <Jumbo />
       <ContentRow />
       {/* {JSONDATA.map((key, val) => {

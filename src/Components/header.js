@@ -56,7 +56,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Check the scroll position (Y-axis)
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         // When scrolled past Y = 0
         setScrollClass('scrolled');
       } else {
