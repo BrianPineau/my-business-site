@@ -8,7 +8,8 @@ import './component-css/header.css';
 
 const Header = () => {
 
-  const [loadStatus, setLoadStatus] = useState(false);
+  const [effectTriggered, setEffectTriggered] = useState(false);
+
   const [isHovered, setIsHovered] = useState(false);
 
 
@@ -20,13 +21,12 @@ const Header = () => {
     setIsHovered(false);
   };
 
-  
 
 
-
+/*  Handle the LOAD event listener  */
   useEffect (() => {
     const handleLoadPage = () => {
-      setLoadStatus(true);
+      setEffectTriggered(true);
     };
 
 
@@ -39,29 +39,16 @@ const Header = () => {
 
 
 
-  let [scrolled, shrinkHeader] = useState(false);
+ 
 
-  const changeHeader = () => {
-    if (window.scrollY >= 6) {
-      shrinkHeader(true);
-    } else {
-      shrinkHeader(false);
-    }
-  };
-
-  window.addEventListener('scroll', changeHeader);
-
-  const [scrollClass, setScrollClass] = useState('top'); // Initial class
+  
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check the scroll position (Y-axis)
       if (window.scrollY > 100) {
-        // When scrolled past Y = 0
-        setScrollClass('scrolled');
+        setEffectTriggered(false);
       } else {
-        // When at the top of the page (Y = 0)
-        setScrollClass('top');
+        setEffectTriggered(true);
       }
     };
 
@@ -83,14 +70,14 @@ const Header = () => {
   return (   
     <Fragment>
 
-    <div className={loadStatus ? ("shrunk-bg-header") : ("bg-header")}>Bloop</div>
-      <header className={loadStatus ? ("shrunk-vert-header") : ("vert-header")}>
+    <div className={effectTriggered ? ("shrunk-bg-header") : ("bg-header")}>Bloop</div>
+      <header className={effectTriggered ? ("shrunk-vert-header") : ("vert-header")}>
         <div className="header-container vheader-container">
 
           <div className="top-row vtop-row">
             
             <div className="logo vlogo"><div className="logo-image"></div></div>
-            {/* <div className="tools">tools</div> */}
+            {/* <div className="tools">tools</div> */} 
           </div>
 
           <div className="bottom-row vert-bottom-row">
@@ -100,31 +87,31 @@ const Header = () => {
             {/* <Link style={noMoStylin} to="./"><div className="home vhome">HOME</div></Link> */}
 
             <Link style={noMoStylin} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <SideHeaderLi liName={'HOME'} className={loadStatus ? "vhome-loaded" : "vhome"} />
+              <SideHeaderLi liName={'HOME'} className={effectTriggered ? "vhome-loaded" : "vhome"} />
             </Link>
 
               <div className={isHovered ? "flat-line flat-line-1" : "flat-line-hovered"}></div>
 
             <Link to="./shop-page" style={noMoStylin}>
-              <SideHeaderLi liName={'STORE'} className={loadStatus ? "vstore-loaded" : "vstore"} />
+              <SideHeaderLi liName={'STORE'} className={effectTriggered ? "vstore-loaded" : "vstore"} />
             </Link>
 
             <div className={isHovered ? "flat-line flat-line-2" : "flat-line-hovered"}></div>
 
             <Link to="./gallery" style={noMoStylin}>
-              <SideHeaderLi liName={'GALLERY'} className={loadStatus ? "vgallery-loaded" : "vgallery"} />
+              <SideHeaderLi liName={'GALLERY'} className={effectTriggered ? "vgallery-loaded" : "vgallery"} />
             </Link>
 
             <Link style={noMoStylin}>
-              <SideHeaderLi liName={'ABOUT'} className={loadStatus ? "vabout-loaded" : "vabout"} />
+              <SideHeaderLi liName={'ABOUT'} className={effectTriggered ? "vabout-loaded" : "vabout"} />
             </Link>
 
             <Link style={noMoStylin}>
-              <SideHeaderLi liName={'CONTACT'} className={loadStatus ? "vcontact-loaded" : "vcontact"} />
+              <SideHeaderLi liName={'CONTACT'} className={effectTriggered ? "vcontact-loaded" : "vcontact"} />
             </Link>
-            <Link style={noMoStylin}><SideHeaderLi liName={'SALES'} className={loadStatus ? "vsales-loaded" : "vsales"} /></Link>
+            <Link style={noMoStylin}><SideHeaderLi liName={'SALES'} className={effectTriggered ? "vsales-loaded" : "vsales"} /></Link>
 
-             <div className={scrolled === false ? "tools-pretrigger": "tools-triggered"}>tools</div> 
+             
 
           </div>
 
