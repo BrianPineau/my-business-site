@@ -10,7 +10,7 @@ const ImageCard = (props) => {
 
   return ( 
     <div className="image-card-wrapper"> 
-      <section className="card card-1">
+      <section className="home-card home-card-1">
         <div
           onMouseEnter = {() => animateCard(true)}
           onMouseLeave = {() => animateCard(false)}

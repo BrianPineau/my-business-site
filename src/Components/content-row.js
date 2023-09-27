@@ -10,7 +10,7 @@ const ContentRow = () => {
       <div className="section-container"> 
         <div className="flex-container">
           <ImageCard
-            image = {"card card-image card-image-1"}
+            image = {"home-card card-image card-image-1"}
             title = {"Card description 1!"}
             price = {"$5,000!!!"}
           />
