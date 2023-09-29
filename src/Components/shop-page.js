@@ -2,7 +2,7 @@ import React from 'react'
 
 import './component-css/shop-page.css';
 import SmallHeader from './small-header';
-import SalesCard from './sales-card';
+import SalesJumboSection from './sales-jumbo-section';
 
 import XGirl from '../Images/xgirl.jpg';
 import AstorLogo from '../Images/AstoriaLogo.png';
@@ -14,10 +14,10 @@ const ShopPage = () => {
     <>
       <SmallHeader smallHeaderClass = {'small-header'} />
       
-      <div className='outer-container'>
-        <div className='container'>
-          <SalesCard imageSrc={XGirl} />
-          <SalesCard imageSrc={AstorLogo} />
+      <div className='shop-outer-container'>
+        <div className='shop-container'>
+          <SalesJumboSection imageSrc={XGirl} />
+          {/* <SalesCard imageSrc={AstorLogo} />
           <SalesCard imageSrc={Painting}/>
           <SalesCard imageSrc={XGirl} />
           <SalesCard imageSrc={AstorLogo} />
@@ -27,7 +27,7 @@ const ShopPage = () => {
           <SalesCard imageSrc={Painting}/>
           <SalesCard imageSrc={XGirl} />
           <SalesCard imageSrc={AstorLogo} />
-          <SalesCard imageSrc={Painting}/>
+          <SalesCard imageSrc={Painting}/> */}
         </div>
       </div>
     </>
