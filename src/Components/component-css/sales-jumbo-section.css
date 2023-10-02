@@ -24,13 +24,13 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: brown;
     width: 50%;
     max-height: 500px;
 }
 
 .sales-section-header {
     color: black;
+    margin-bottom: 20px;
 }
 
 .sales-jumbo-button {
@@ -47,10 +47,13 @@ button {
     overflow: hidden;
 }
 
-.sales-img-cont > img {
+.sales-jumbo-image {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: top;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
+.sales-jumbo-image-1 {
+    background-image: url('../../Images/aras.jpg');
+}

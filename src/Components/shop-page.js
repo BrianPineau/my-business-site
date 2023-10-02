@@ -19,6 +19,7 @@ const ShopPage = () => {
           <SalesJumboSection imageSrc={XGirl} />
           <SalesItemsRow />
           <SalesJumboSection imageSrc={AstorLogo} />
+          <SalesItemsRow />
         </div>
       </div>
     </>

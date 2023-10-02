@@ -7,10 +7,31 @@ const salesItemsRow = () => {
     <>
       <div className='item-row-cont'>
         <ul className='item-row-inner-cont'>
-          <li className='list-item-1'></li>
-          <li className='list-item-2'></li>
-          <li className='list-item-3'></li>
-          <li className='list-item-4'></li>
+
+          <li className='item-row-list-item'>
+            <div className='salesitem-image salesitem-item-1'></div>
+            <h2>Title Section</h2>
+            <p>$Price</p>
+          </li>
+
+          <li className='item-row-list-item'>
+            <div className='salesitem-image salesitem-item-2'></div>
+            <h2>Title Section</h2>
+            <p>$Price</p>
+          </li>
+
+          <li className='item-row-list-item'>
+            <div className='salesitem-image salesitem-item-3'></div>
+            <h2>Title Section</h2>
+            <p>$Price</p>
+          </li>
+
+          <li className='item-row-list-item'>
+            <div className='salesitem-image salesitem-item-4'></div>
+            <h2>Title Section</h2>
+            <p>$Price</p>
+          </li>
+
         </ul>
       </div>
     </>

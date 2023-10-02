@@ -11,7 +11,7 @@ const SalesJumboSection = (props) => {
         <button className='sales-jumbo-button'>VIEW ALL</button>
       </div>
       <div className='sales-img-cont'>
-        <img src={props.imageSrc}/>
+        <div className='sales-jumbo-image sales-jumbo-image-1'></div>
       </div>
      </div>
     </>
