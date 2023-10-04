@@ -20,55 +20,68 @@ const ImageGrid = () => {
           
           <FullImageCard 
           navLink={"/gallery-image-info"} 
-          fimage = "full-image-container fat f-img-cont-1"
+          fimage = "full-image-container fat"
+          fImageSource = "full-image-image full-image-image-1"
           />
           
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-2"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-2"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-3"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-3"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-4"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-4"
           />
 
           <FullImageCard
-            fimage = {"full-image-container tall f-img-cont-5"}
+            fimage = {"full-image-container tall"}
+            fImageSource = "full-image-image full-image-image-5"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-6"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-6"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-7"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-7"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-8"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-8"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-9"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-9"
           />
 
           <FullImageCard
-            fimage = {"full-image-container fat f-img-cont-10"}
+            fimage = {"full-image-container fat"}
+            fImageSource = "full-image-image full-image-image-10"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-11"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-11"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-12"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-12"
           />
 
           <FullImageCard
-            fimage = {"full-image-container f-img-cont-13"}
+            fimage = {"full-image-container"}
+            fImageSource = "full-image-image full-image-image-13"
           />
 
         </div>

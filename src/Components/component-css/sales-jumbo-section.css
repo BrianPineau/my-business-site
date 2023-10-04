@@ -29,6 +29,8 @@ button {
 }
 
 .sales-section-header {
+    position: absolute;
+    top: 180px;
     color: black;
     margin-bottom: 20px;
 }
@@ -36,9 +38,22 @@ button {
 .sales-jumbo-button {
     height: 50px;
     width: 200px;
+    color: black;
     border: 1px solid black;
     border-radius: 3px;
-    color: black;
+    transition: all 0.1s ease;
+}
+.sales-jumbo-button:hover {
+    position: relative;
+    height: 70px;
+    width: 250px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    border: 4px solid white;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
 .sales-img-cont {
@@ -46,12 +61,18 @@ button {
     max-height: 500px;
     overflow: hidden;
 }
+.sales-jumbo-image:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
 
 .sales-jumbo-image {
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
+    transition: transform 0.2s ease;
 }
 
 .sales-jumbo-image-1 {

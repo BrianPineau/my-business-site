@@ -8,9 +8,6 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  background-color: blue;
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
 }
 
@@ -20,43 +17,59 @@
   padding-top: 100%;
 }
 
-.f-img-cont-1 {
+.full-image-image-1 {
   background-image: url('../../Images/AstoriaLogo.png');
   background-color: rgb(230, 236, 118);
 }
-.f-img-cont-2 {
+.full-image-image-2 {
   background-image: url('../../Images/goku-jet.jpg');
 }
-.f-img-cont-3 {
+.full-image-image-3 {
   background-image: url('../../Images/block.jpg');
 }
-.f-img-cont-4 {
+.full-image-image-4 {
   background-image: url('../../Images/green.jpg');
 }
-.f-img-cont-5 {
+.full-image-image-5 {
   background-image: url('../../Images/xgirl.jpg');
 }
-.f-img-cont-6 {
+.full-image-image-6 {
   background-image: url('../../Images/pose.jpg');
 }
-.f-img-cont-7 {
+.full-image-image-7 {
   background-image: url('../../Images/on-rocks.jpg');
 }
-.f-img-cont-8 {
+.full-image-image-8 {
   background-image: url('../../Images/image1.jpg');
 }
-.f-img-cont-9 {
+.full-image-image-9 {
   background-image: url('../../Images/image2.jpg');
 }
-.f-img-cont-10 {
+.full-image-image-10 {
   background-image: url('../../Images/image3.jpg');
 }
-.f-img-cont-11 {
+.full-image-image-11 {
   background-image: url('../../Images/image4.jpg');
 }
-.f-img-cont-12 {
+.full-image-image-12 {
   background-image: url('../../Images/image5.jpg');
 }
-.f-img-cont-13 {
+.full-image-image-13 {
   background-image: url('../../Images/image6.jpg');
+}
+
+.full-image-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.15s ease-out;
+}
+.full-image-image:hover {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transform: scale(1.1);
 }
