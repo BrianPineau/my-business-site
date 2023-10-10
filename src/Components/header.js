@@ -70,7 +70,7 @@ const Header = () => {
   return (   
     <Fragment>
 
-    <div className={effectTriggered ? ("shrunk-bg-header") : ("bg-header")}>Bloop</div>
+    <div className={effectTriggered ? ("shrunk-bg-header") : ("bg-header")}></div>
       <header className={effectTriggered ? ("shrunk-vert-header") : ("vert-header")}>
         <div className="header-container vheader-container">
 
@@ -86,30 +86,48 @@ const Header = () => {
 
             {/* <Link style={noMoStylin} to="./"><div className="home vhome">HOME</div></Link> */}
 
-            <Link style={noMoStylin} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <SideHeaderLi liName={'HOME'} className={effectTriggered ? "vhome-loaded" : "vhome"} />
+            <Link to="./" style={noMoStylin}>
+              <div className='header-element-cont'>
+                <SideHeaderLi liName={'HOME'} className={effectTriggered ? "vhome-loaded" : "vhome"} />
+                <div className='extendo-underline'></div>
+              </div>
             </Link>
 
-              <div className={isHovered ? "flat-line flat-line-1" : "flat-line-hovered"}></div>
 
             <Link to="./shop-page" style={noMoStylin}>
-              <SideHeaderLi liName={'STORE'} className={effectTriggered ? "vstore-loaded" : "vstore"} />
+              <div className='header-element-cont'>
+                <SideHeaderLi liName={'STORE'} className={effectTriggered ? "vstore-loaded" : "vstore"} />
+                <div className='extendo-underline'></div>
+              </div>
             </Link>
-
-            <div className={isHovered ? "flat-line flat-line-2" : "flat-line-hovered"}></div>
 
             <Link to="./gallery" style={noMoStylin}>
-              <SideHeaderLi liName={'GALLERY'} className={effectTriggered ? "vgallery-loaded" : "vgallery"} />
+              <div className='header-element-cont'>
+                <SideHeaderLi liName={'GALLERY'} className={effectTriggered ? "vgallery-loaded" : "vgallery"} />
+                <div className='extendo-underline'></div>
+              </div>
             </Link>
 
             <Link style={noMoStylin}>
-              <SideHeaderLi liName={'ABOUT'} className={effectTriggered ? "vabout-loaded" : "vabout"} />
+              <div className='header-element-cont'>
+                <SideHeaderLi liName={'ABOUT'} className={effectTriggered ? "vabout-loaded" : "vabout"} />
+                <div className='extendo-underline'></div>
+              </div>
             </Link>
 
             <Link style={noMoStylin}>
-              <SideHeaderLi liName={'CONTACT'} className={effectTriggered ? "vcontact-loaded" : "vcontact"} />
+              <div className='header-element-cont'>
+                <SideHeaderLi liName={'CONTACT'} className={effectTriggered ? "vcontact-loaded" : "vcontact"} />
+                <div className='extendo-underline'></div>
+              </div>
             </Link>
-            <Link style={noMoStylin}><SideHeaderLi liName={'SALES'} className={effectTriggered ? "vsales-loaded" : "vsales"} /></Link>
+
+            <Link style={noMoStylin}>
+              <div className='header-element-cont'>
+                <SideHeaderLi liName={'SALES'} className={effectTriggered ? "vsales-loaded" : "vsales"} />
+                <div className='extendo-underline'></div>
+              </div>
+            </Link>
 
              
 

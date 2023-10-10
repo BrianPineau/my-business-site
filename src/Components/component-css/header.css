@@ -45,7 +45,7 @@
 .logo-image {
   background-image: url("../../Images/AstoriaLogo.png");
   background-position: center;
-  background-size: cover;
+  background-size: 150%;
   background-repeat: no-repeat;
   height: 100%;
   max-width: 100%;
@@ -181,9 +181,11 @@
 }
 
 .vlogo {
-  height: 320px;
-  width: 400px;
-  margin-left: -8px;
+  height: 248px;
+  width: 248px;
+  overflow: hidden;
+  border: 6px solid black;
+  border-radius: 50%;
 }
 
 .vert-bottom-row {
@@ -195,6 +197,26 @@
   width:250px;
   position: absolute;
   margin-top: 320px;
+}
+
+.header-element-cont {
+  height: 100%;
+  width: 100%;
+}
+
+.extendo-underline {
+  opacity: 0.3;
+  transition: 0.2s ease-out;
+}
+.header-element-cont:hover .extendo-underline {
+  position: relative;
+  top: -4px;
+  left: 30px;
+  height: 0.1px;
+  background-color: white;
+  width: 80%;
+  opacity: 1;
+  transition: 0.4s ease-out;
 }
 
 .vhome,
@@ -247,7 +269,7 @@
   transition-delay: 0.7s;
 }
 
-.flat-line-hovered {
+.extendo-underline {
   position: relative;
   top: -4px;
   left: 30px;  
@@ -255,41 +277,6 @@
   width: 0;
   background-color: white;
   opacity: 0;
-}
-
-.flat-line {
-  position: relative;
-  top: -4px;
-  left: 30px;
-  height: 0.1px;
-  background-color: white;
-  transition: 0.4s ease-out;
-}
-
-.flat-line-1 {
-  width: 80%;
-  opacity: 1;
-  color: blue;
-}
-.flat-line-2 {
-  width: 80%;
-  opacity: 1;
-}
-.flat-line-3 {
-  width: 80%;
-  opacity: 1;
-}
-.flat-line-4 {
-  width: 80%;
-  opacity: 1;
-}
-.flat-line-5 {
-  width: 80%;
-  opacity: 1;
-}
-.flat-line-6 {
-  width: 80%;
-  opacity: 1;
 }
 
 .social-media {

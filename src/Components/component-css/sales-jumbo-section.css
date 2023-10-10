@@ -32,7 +32,7 @@ button {
     position: absolute;
     top: 180px;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .sales-jumbo-button {
@@ -41,18 +41,18 @@ button {
     color: black;
     border: 1px solid black;
     border-radius: 3px;
-    transition: all 0.1s ease;
+    transition: all 0.12s ease;
 }
 .sales-jumbo-button:hover {
     position: relative;
     height: 70px;
-    width: 250px;
+    width: 220px;
     color: white;
     background-color: black;
     margin: 10px;
     border: 4px solid white;
     border-radius: 7px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 100;
 }
 

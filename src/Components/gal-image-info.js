@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SmallHeader from './small-header';
 import FullImageCard from './full-image-card';
 import './component-css/gal-image-info.css';
-
+ 
 
 const GalleryImageInfo = () => {
 
@@ -20,7 +20,7 @@ const GalleryImageInfo = () => {
   return (
     <div>
       <SmallHeader />
-      <div className="image-info-container">
+      <div className="image-info-container"> 
 
         <div className="image-container">
           <div onClick={() => popOutWindow()} className="big-image"></div>
@@ -33,22 +33,22 @@ const GalleryImageInfo = () => {
         <div className="side-bar-container">  
           <div className="similar-images">
             <div className="similar-images-grid"> 
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
-              <FullImageCard />
+              <FullImageCard fimage="full-image-image-1 full-image-image"/>
+              <FullImageCard fimage="full-image-image-2 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-4 full-image-image" />
+              <FullImageCard fimage="full-image-image-5 full-image-image" />
+              <FullImageCard fimage="full-image-image-6 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
+              <FullImageCard fimage="full-image-image-8 full-image-image" />
+              <FullImageCard fimage="full-image-image-9 full-image-image" />
+              <FullImageCard fimage="full-image-image-10 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-12 full-image-image" />
+              <FullImageCard fimage="full-image-image-13 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
             </div>
           </div>
         </div>
