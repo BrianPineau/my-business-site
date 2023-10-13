@@ -8,7 +8,7 @@ import ContentRow from './content-row.js';
 // import JSONDATA from '../MOCK_DATA.json';
 
 const LandingPage = () => {
-
+ 
   const [isSmallHeader, setSmallHeader] = useState(false);
 
   useEffect(() => {

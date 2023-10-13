@@ -19,7 +19,7 @@ const GalleryImageInfo = () => {
  
   return (
     <div>
-      <SmallHeader />
+      <SmallHeader smallHeaderClass = {'small-header'} />
       <div className="image-info-container"> 
 
         <div className="image-container">
@@ -44,6 +44,33 @@ const GalleryImageInfo = () => {
               <FullImageCard fimage="full-image-image-9 full-image-image" />
               <FullImageCard fimage="full-image-image-10 full-image-image" />
               <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-12 full-image-image" />
+              <FullImageCard fimage="full-image-image-13 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
+              <FullImageCard fimage="full-image-image-12 full-image-image" />
+              <FullImageCard fimage="full-image-image-13 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
+              <FullImageCard fimage="full-image-image-12 full-image-image" />
+              <FullImageCard fimage="full-image-image-13 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
+              <FullImageCard fimage="full-image-image-12 full-image-image" />
+              <FullImageCard fimage="full-image-image-13 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
+              <FullImageCard fimage="full-image-image-11 full-image-image" />
+              <FullImageCard fimage="full-image-image-3 full-image-image" />
+              <FullImageCard fimage="full-image-image-7 full-image-image" />
               <FullImageCard fimage="full-image-image-12 full-image-image" />
               <FullImageCard fimage="full-image-image-13 full-image-image" />
               <FullImageCard fimage="full-image-image-11 full-image-image" />

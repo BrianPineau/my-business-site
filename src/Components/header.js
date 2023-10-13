@@ -10,16 +10,6 @@ const Header = () => {
 
   const [effectTriggered, setEffectTriggered] = useState(false);
 
-  const [isHovered, setIsHovered] = useState(false);
-
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);  
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
 
 
 
@@ -37,9 +27,6 @@ const Header = () => {
     }
   }, []);
 
-
-
- 
 
   
 
@@ -74,24 +61,23 @@ const Header = () => {
       <header className={effectTriggered ? ("shrunk-vert-header") : ("vert-header")}>
         <div className="header-container vheader-container">
 
-          <div className="top-row vtop-row">
-            
-            <div className="logo vlogo"><div className="logo-image"></div></div>
+          
+          <div className='vlogo-cont'>
+            <div className={effectTriggered ? "vlogo-trig" : "vlogo-pretrig"}>
+              <div className="logo-image"></div>
+            </div>
             {/* <div className="tools">tools</div> */} 
           </div>
+          
 
           <div className="bottom-row vert-bottom-row">
-
-            {/* <div className={scrolled === false ? "social-media-pretrigger": "social-media-triggered"}>media</div>  */}
-
-            {/* <Link style={noMoStylin} to="./"><div className="home vhome">HOME</div></Link> */}
 
             <Link to="./" style={noMoStylin}>
               <div className='header-element-cont'>
                 <SideHeaderLi liName={'HOME'} className={effectTriggered ? "vhome-loaded" : "vhome"} />
                 <div className='extendo-underline'></div>
               </div>
-            </Link>
+            </Link> 
 
 
             <Link to="./shop-page" style={noMoStylin}>
@@ -137,38 +123,6 @@ const Header = () => {
         </div>
       </header>
     </Fragment>
-
-
-    
-    
-    // <div>
-    //   <header className={scrolled === false ? "full-header": "full-header-shrink"}>
-    //     <div className="header-container">
-
-    //       <div className="top-row">
-    //         <div className="social-media">media</div>
-    //         <div className="logo"><div className="logo-image"></div></div>
-    //         <div className="tools">tools</div>
-    //       </div>
-
-    //       <div className="bottom-row">
-
-    //         <div className={scrolled === false ? "social-media-pretrigger": "social-media-triggered"}>media</div> 
-
-    //         <Link style={noMoStylin} to="./"><div className="home">HOME</div></Link>
-    //         <div className="shop">SHOP</div>
-    //         <Link style={noMoStylin} to="./gallery"><div className="gallery">GALLERY</div></Link>
-    //         <div className="about">ABOUT</div>
-    //         <div className="contact">CONTACT</div>
-    //         <div className="sales">SALES</div>
-
-    //         <div className={scrolled === false ? "tools-pretrigger": "tools-triggered"}>tools</div>
-
-    //       </div>
-
-    //     </div>
-    //   </header>
-    // </div>
   )
 }
 

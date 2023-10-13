@@ -29,28 +29,6 @@
   width: 100%;
 } */
 
-/* .top-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 220px;
-  margin: 0 30px;
-} */
-
-/* .logo {
-  height: 100%;
-  width: 400px;
-} */
-
-.logo-image {
-  background-image: url("../../Images/AstoriaLogo.png");
-  background-position: center;
-  background-size: 150%;
-  background-repeat: no-repeat;
-  height: 100%;
-  max-width: 100%;
-}
-
 /* .bottom-row {
   position: relative;
   display: flex;
@@ -173,19 +151,44 @@
   height: 100vh;
 }
 
-.vtop-row {
+.vlogo-cont {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  height: 300px;
+  position: absolute;
+  height: 250px;
+  width: 250px;
 }
 
-.vlogo {
+.vlogo-trig {
   height: 248px;
   width: 248px;
   overflow: hidden;
-  border: 6px solid black;
+  border: 1px solid black;
   border-radius: 50%;
+  opacity: 1;
+  transition: 0.5s ease-out;
+  transform-origin: center center;
+  transition-delay: 0.3s;
+}
+.vlogo-pretrig {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  border: 60px solid rgb(71 1 160);
+  border-radius: 50%;
+  opacity: 0;
+  transform-origin: center center;
+  transition: 0.5s ease-out;
+}
+
+.logo-image {
+  background-image: url("../../Images/AstoriaLogo.png");
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  height: 100%;
+  max-width: 100%;
 }
 
 .vert-bottom-row {
@@ -205,8 +208,7 @@
 }
 
 .extendo-underline {
-  opacity: 0.3;
-  transition: 0.2s ease-out;
+  transition: 0.1s ease-out;
 }
 .header-element-cont:hover .extendo-underline {
   position: relative;
