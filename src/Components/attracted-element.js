@@ -85,7 +85,7 @@ const AttractedElement = () => {
 
 
   return (
-    <div ref={divRef} className='email-signup'>Yeowwwww!</div>
+    <div ref={divRef} className='email-signup'>EMAIL SIGNUP</div>
   );
 };
 

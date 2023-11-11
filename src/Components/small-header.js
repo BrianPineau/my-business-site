@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import './component-css/small-header.css';
 import xLogo from '../Images/x-logo.png';
-
+ 
 const SmallHeader = (props) => {
 
 
@@ -41,8 +41,14 @@ const SmallHeader = (props) => {
               <div className="gallery">GALLERY</div>
             </Link>
             
-            <div className="about">ABOUT</div>
-            <div className="contact">CONTACT</div>
+            <Link style={noMoStylin} to="./about">
+              <div className="about">ABOUT</div>
+            </Link>
+
+            <Link style={noMoStylin} to="./contact">
+              <div className="contact">CONTACT</div>
+            </Link>
+
             <div className="sales">SALES</div>
 
             <div className="tools-triggered">tools</div>

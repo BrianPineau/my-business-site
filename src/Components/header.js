@@ -2,7 +2,7 @@ import React, { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
 
-import SideHeaderLi from './side-header-li.js';
+import SideHeaderLi from './side-header-li.js'; 
 import './component-css/header.css';
 
 
@@ -94,14 +94,14 @@ const Header = () => {
               </div>
             </Link>
 
-            <Link style={noMoStylin}>
+            <Link to="./about" style={noMoStylin}>
               <div className='header-element-cont'>
                 <SideHeaderLi liName={'ABOUT'} className={effectTriggered ? "vabout-loaded" : "vabout"} />
                 <div className='extendo-underline'></div>
               </div>
             </Link>
 
-            <Link style={noMoStylin}>
+            <Link to="./contact" style={noMoStylin}>
               <div className='header-element-cont'>
                 <SideHeaderLi liName={'CONTACT'} className={effectTriggered ? "vcontact-loaded" : "vcontact"} />
                 <div className='extendo-underline'></div>

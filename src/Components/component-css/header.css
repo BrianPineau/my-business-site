@@ -235,9 +235,6 @@
   transition: all 0.3s;
   transform: 2 ease-out;
 }
-
-
-
 .vhome-loaded,
 .vstore-loaded,
 .vgallery-loaded,
@@ -251,7 +248,6 @@
   opacity: 1;
   transition: 1s;
 }
-
 .vhome-loaded {
   transition-delay: 0.2s;
 }
